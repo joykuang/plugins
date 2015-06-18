@@ -27,8 +27,8 @@ var autoHeight = function (element, callback) {
             
         if (!current.attr("data-height")) {
             if (expr.test(currentHeight)) {
-                var w = parseInt(currentHeight.split(':')[0]);
-                var h = parseInt(currentHeight.split(':')[1]);
+                var w = parseInt(currentHeight.split(':')[0]),
+                        h = parseInt(currentHeight.split(':')[1]);
                 divHeight = current.width() / w * h;
                 divDom.height(divHeight)
             } 
@@ -36,8 +36,8 @@ var autoHeight = function (element, callback) {
         children.each(function () {
              var current = $(this);
             if (expr.test(currentHeight)) {
-                var w = parseInt(currentHeight.split(':')[0]);
-                var h = parseInt(currentHeight.split(':')[1]);
+                var w = parseInt(currentHeight.split(':')[0]),
+                        h = parseInt(currentHeight.split(':')[1]);
                 divHeight = current.width() / w * h;
                 divDom.height(divHeight)
             } 
@@ -47,8 +47,8 @@ var autoHeight = function (element, callback) {
             var divDom = $(this);
             divHeight = 0, value = divDom.attr("data-height");
             if (expr.test(value)) {
-                var w = parseInt(value.split(':')[0]);
-                var h = parseInt(value.split(':')[1]);
+                var w = parseInt(currentHeight.split(':')[0]),
+                        h = parseInt(currentHeight.split(':')[1]);
                 divHeight = divDom.width() / w * h;
                 divDom.height(divHeight)
             } 

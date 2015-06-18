@@ -2,15 +2,14 @@
 一些前端小插件，不定期更新
 
 ## Plugins List
-1.**autoHeight 自动高度**
+1. **autoHeight 自动高度**
 
 ## Dependences
-1.**node.js**
-2.**uglifyjs** [node]
+1. **node.js**
+2. **uglifyjs** [node]
 
 ## Todos
 * Code optimized
-
 
 ## Copyright and License
 
