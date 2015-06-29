@@ -1,5 +1,10 @@
 # Changelog 发布日志
 
+### 1.0.3 (6月29日，2015年)
+
+  - 修复插件 autoHeight 一些问题
+  - 插件 rotateTip 预发布
+
 ### 1.0.2 (6月19日，2015年)
 
   - 插件 LazyImage 发布

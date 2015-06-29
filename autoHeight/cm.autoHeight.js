@@ -8,11 +8,7 @@
 **/
 var autoHeight = function (element, callback) {
     //检测Zepto/jQuery依赖，无依赖则抛出错误
-    if (!Zepto && typeof Zepto !== "function") {
-        throw new Error("Zepto/jQuery required!");
-        return;
-    }
-    if (!jQuery && typeof jQuery !== "function") {
+    if ((!window.Zepto && typeof Zepto !== "function") && (!window.jQuery && typeof jQuery !== "function")) {
         throw new Error("Zepto/jQuery required!");
         return;
     }
@@ -47,8 +43,8 @@ var autoHeight = function (element, callback) {
             var divDom = $(this);
             divHeight = 0, value = divDom.attr("data-height");
             if (expr.test(value)) {
-                var w = parseInt(currentHeight.split(':')[0]),
-                        h = parseInt(currentHeight.split(':')[1]);
+                var w = parseInt(value.split(':')[0]),
+                        h = parseInt(value.split(':')[1]);
                 divHeight = divDom.width() / w * h;
                 divDom.height(divHeight)
             } 

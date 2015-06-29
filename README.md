@@ -4,6 +4,7 @@
 ## Plugins List
 1. **autoHeight 自动高度**
 2. **LazyImage 图片延时加载**
+3. **rotateTip 转屏提示**
 
 ## Dependences
 1. **node.js**
